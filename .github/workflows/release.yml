@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: "true"
       - name: Setup Python
@@ -64,7 +64,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: "true"
       - name: Setup Python
@@ -106,7 +106,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: "true"
       - name: Setup Python
@@ -155,7 +155,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: "true"
       - name: Setup Python
@@ -189,7 +189,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: "true"
       - name: Setup Python
@@ -222,7 +222,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: "true"
       - name: Setup Python
@@ -265,7 +265,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         submodules: "true"
     - name: Setup Python
@@ -291,7 +291,7 @@ jobs:
     needs: [buildLinuxMultiArch, buildWin, buildWinARM, buildMac, buildMacARM, buildWin32, buildSourceDist]
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Create Dir for Build
         run: |
           cd ${{ github.workspace }}
